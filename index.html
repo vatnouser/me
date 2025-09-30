@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+        a {
+            color: #333333;
+        }
+        .certificate-link {
+            color: #9c64f4;
+            font-weight: 500;
+        }
+        .certificate-link i {
+            color: gold;
+        }
+a:hover {
+            color: #9c64f4;
+        }
+.glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen p-8">
+    <div class="max-w-4xl mx-auto space-y-8">
+        <!-- Header Section -->
+        <div class="flex items-start gap-8">
+            <!-- Photo Block -->
+            <div class="w-48 h-64 glass-card rounded-2xl p-1">
+                <img src="https://i.ibb.co/CKNSqNfT/photo34.png" alt="Profile" class="w-full h-full rounded-xl object-cover">
+            </div>
+<!-- Info Block -->
+            <div class="glass-card p-8 flex-1 rounded-2xl h-64 flex flex-col justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold mb-4">Рухлядко Максим</h1>
+                    <p class="opacity-80">Junior-разработчик на Python. Нахожусь в активном поиске работы. 14 лет, обучаюсь в общеобразовательной школе, дополнительно прохожу курсы повышения квалификации в сфере информационной безопасности. Имею небольшой (~1 год) опыт в разработке несложных проектов в одиночку.</p>
+                </div>
+                <div class="pt-4">
+                    <div class="flex gap-2">
+                        <div class="glass-card p-2 w-20 border-2 border-green-500 rounded-lg bg-green-500 bg-opacity-10 flex items-center justify-center" style='height: 35px'>
+                            <p class="text-white text-sm font-normal">Python</p>
+                        </div>
+                        <div class="glass-card p-2 w-20 border-2 border-gray-400 rounded-lg bg-gray-400 bg-opacity-10 flex items-center justify-center" style='height: 35px; width: 150px'>
+                            <p class="text-white text-sm font-normal">Telegram bot API</p>
+                        </div>
+                    </div>
+</div>
+            </div>
+<!-- Bottom Blocks -->
+        </div>
+        <div class="flex gap-8">
+            <!-- LEFT BLOCK - COLLAPSED INITIALLY -->
+            <div id="leftBlock" class="glass-card p-4 flex-1 transition-all duration-500 ease-in-out cursor-pointer overflow-hidden h-16">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-xl font-semibold">Квалификация</h2>
+                    <i class="chevron" data-feather="chevron-down"></i>
+                </div>
+<div class="content hidden pt-2">
+                    <p class="opacity-60">На данный момент обучаюсь в МАОУ СОШ №42 города Краснодар. Получил сертификат, подтверждающий базовый уровень владения Python. Так-же прохожу дополнительные курсы по профилю информационной безопасности. Учавствую в ВСоШ 2025-2026 по информатике (программирование, информационная безопасность).
+                    <br><br>
+                    <a href='res/Сертификат_ИТ_компетенций_форма_1.pdf' class="certificate-link hover:underline flex items-center gap-1">
+                        <i data-feather="award" class="w-4 h-4"></i>
+<span>Сертификат (оригинал)</span>
+                    </a>
+</p>
+                </div>
+            </div>
+            <!-- RIGHT BLOCK - COLLAPSED INITIALLY -->
+            <div id="rightBlock" class="glass-card p-4 flex-1 transition-all duration-500 ease-in-out cursor-pointer overflow-hidden h-16">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-xl font-semibold">Навыки и опыт</h2>
+                    <i class="chevron" data-feather="chevron-down"></i>
+                </div>
+<div class="content hidden pt-2">
+                    <p class="opacity-60">Основным направлением для проектов служит создание Telegram-ботов на TG bot API и интеграция управления в этих же ботах через HTTP BOT API. Создавал небольшие проекты со сторонними API, а так-же без них. Все вышедшие проекты пользовались широким спросом и показывали отличные результаты в привлечении пользователей.<br>Все опубликованные проекты будут расположены под контактной информацией.</p>
+                </div>
+            </div>
+</div>
+        <!-- New Wide Block -->
+        <div id="wideBlock" class="glass-card p-4 w-full transition-all duration-500 ease-in-out cursor-pointer overflow-hidden h-16">
+            <div class="flex justify-between items-center">
+                <h2 class="text-xl font-semibold">Контактная информация</h2>
+                <i class="chevron" data-feather="chevron-down"></i>
+            </div>
+            <div class="content hidden pt-2">
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="flex items-center gap-3 opacity-60">
+                        <i data-feather="phone" class="w-5 h-5"></i>
+                        <a href="tel:+79180881832" class="hover:text-purple-400">+7 (918) 088-18-32</a>
+                    </div>
+                    <div class="flex items-center gap-3 opacity-60">
+                        <i data-feather="mail" class="w-5 h-5"></i>
+                        <a href="mailto:veryvatno@gmail.com" class="hover:text-purple-400">veryvatno@gmail.com</a>
+                    </div>
+                    <div class="flex items-center gap-3 opacity-60">
+                        <i data-feather="github" class="w-5 h-5"></i>
+                        <a href="https://github.com/vatnouser" target="_blank" class="hover:text-purple-400">vatnouser</a>
+                    </div>
+                    <div class="flex items-center gap-3 opacity-60">
+                        <i data-feather="send" class="w-5 h-5"></i>
+                        <a href="https://t.me/vatnouser" target="_blank" class="hover:text-purple-400">@vatnouser</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            <!-- Project 1 -->
+            <div class="glass-card p-6 rounded-2xl">
+                <p class="text-xs text-gray-400 mb-1">Closed-Source</p>
+                <h3 class="text-xl font-semibold mb-2">ATGS</h3>
+                <p class="text-sm text-gray-400 mb-4">2024</p>
+                <svg width="100%" height="1" class="mb-4">
+                    <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#9c64f4;stroke-width:1" />
+                </svg>
+                <p class="opacity-80 mb-6">API-based софт для поиска открытых данных в базах. Закрыт, сурс зашифрован.</p>
+                <a href="https://shattereddisk.github.io/rickroll/rickroll.mp4" target="_blank" class="glass-card px-4 py-2 rounded-lg inline-block hover:bg-purple-500 hover:bg-opacity-20 transition-colors">
+                    <span class="flex items-center gap-2">
+                        <i data-feather="github" class="w-4 h-4"></i>
+                        No repo :( 
+                    </span>
+                </a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="glass-card p-6 rounded-2xl">
+                <p class="text-xs text-gray-400 mb-1">Closed-Source</p>
+                <h3 class="text-xl font-semibold mb-2">Bill-Master</h3>
+                <p class="text-sm text-gray-400 mb-4">2024</p>
+                <svg width="100%" height="1" class="mb-4">
+                    <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#9c64f4;stroke-width:1" />
+                </svg>
+                <p class="opacity-80 mb-6">Софт, позволяющий перехватывать криптовалютные чеки TG.</p>
+                <a href="https://shattereddisk.github.io/rickroll/rickroll.mp4" target="_blank" class="glass-card px-4 py-2 rounded-lg inline-block hover:bg-purple-500 hover:bg-opacity-20 transition-colors">
+                    <span class="flex items-center gap-2">
+                        <i data-feather="github" class="w-4 h-4"></i>
+                        No repo :( 
+                    </span>
+                </a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="glass-card p-6 rounded-2xl">
+                <p class="text-xs text-gray-400 mb-1">Closed-Source</p>
+                <h3 class="text-xl font-semibold mb-2">MTG</h3>
+                <p class="text-sm text-gray-400 mb-4">2024</p>
+                <svg width="100%" height="1" class="mb-4">
+                    <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#9c64f4;stroke-width:1" />
+                </svg>
+                <p class="opacity-80 mb-6">Автоматическая рассылка сообщений в публичных чатах Telegram.</p>
+                <a href="https://shattereddisk.github.io/rickroll/rickroll.mp4" target="_blank" class="glass-card px-4 py-2 rounded-lg inline-block hover:bg-purple-500 hover:bg-opacity-20 transition-colors">
+                    <span class="flex items-center gap-2">
+                        <i data-feather="github" class="w-4 h-4"></i>
+                        No repo :( 
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Additional Project -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            <div class="glass-card p-6 rounded-2xl">
+                <p class="text-xs text-gray-400 mb-1">Sold</p>
+                <h3 class="text-xl font-semibold mb-2">Flame Logger</h3>
+                <p class="text-sm text-gray-400 mb-4">2025</p>
+                <svg width="100%" height="1" class="mb-4">
+                    <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#9c64f4;stroke-width:1" />
+                </svg>
+                <p class="opacity-80 mb-6">IP-логгер, маскировка под криптовалютный кошелек TG. Сурс продан.</p>
+                <a href="https://shattereddisk.github.io/rickroll/rickroll.mp4" target="_blank" class="glass-card px-4 py-2 rounded-lg inline-block hover:bg-purple-500 hover:bg-opacity-20 transition-colors">
+                    <span class="flex items-center gap-2">
+                        <i data-feather="github" class="w-4 h-4"></i>
+                        No repo :( 
+                    </span>
+                </a>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl flex flex-col items-center justify-center text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9c64f4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M16 16s-1.5-2-4-2-4 2-4 2"/>
+                    <line x1="9" y1="9" x2="9.01" y2="9"/>
+                    <line x1="15" y1="9" x2="15.01" y2="9"/>
+                </svg>
+                <p class="mt-4 opacity-80">Я скоро вернусь к разработке проектов. Всё будет.</p>
+            </div>
+        </div>
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+const leftBlock = document.getElementById('leftBlock');
+            const rightBlock = document.getElementById('rightBlock');
+            
+            const toggleBlock = (block) => {
+                const content = block.querySelector('.content');
+                const chevron = block.querySelector('.chevron');
+                
+                block.classList.toggle('h-16');
+                block.classList.toggle('h-auto');
+                block.classList.toggle('min-h-[200px]');
+                content.classList.toggle('hidden');
+                
+                if (content.classList.contains('hidden')) {
+                    chevron.setAttribute('data-feather', 'chevron-down');
+                } else {
+                    chevron.setAttribute('data-feather', 'chevron-up');
+                }
+                feather.replace();
+            };
+            leftBlock.addEventListener('click', () => toggleBlock(leftBlock));
+            rightBlock.addEventListener('click', () => toggleBlock(rightBlock));
+            wideBlock.addEventListener('click', () => toggleBlock(wideBlock));
+
+            // Initialize chevrons
+document.addEventListener('DOMContentLoaded', () => {
+                feather.replace();
+            feather.icons['file-text'].toSvg();
+            feather.icons['phone'].toSvg();
+            feather.icons['mail'].toSvg();
+            feather.icons['github'].toSvg();
+            feather.icons['map-pin'].toSvg();
+            feather.icons['send'].toSvg();
+});
+</script>
+</div>
+</body>
+</html>
