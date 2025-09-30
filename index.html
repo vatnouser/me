@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
     <meta charset="UTF-8">
-    <title>Резюме</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.5">
+<title>Резюме</title>
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
@@ -35,17 +36,17 @@ a:hover {
         }
     </style>
 </head>
-<body class="min-h-screen p-8">
-    <div class="max-w-4xl mx-auto space-y-8">
-        <!-- Header Section -->
-        <div class="flex items-start gap-8">
+<body class="min-h-screen p-4">
+    <div class="w-full max-w-[1200px] mx-auto space-y-8 scale-[0.8] md:scale-100 origin-top" style="transform-origin: top center;">
+<!-- Header Section -->
+        <div class="flex flex-col md:flex-row items-start gap-8">
             <!-- Photo Block -->
-            <div class="w-48 h-64 glass-card rounded-2xl p-1">
-                <img src="https://i.ibb.co/CKNSqNfT/photo34.png" alt="Profile" class="w-full h-full rounded-xl object-cover">
-            </div>
-<!-- Info Block -->
-            <div class="glass-card p-8 flex-1 rounded-2xl h-64 flex flex-col justify-between">
-                <div>
+            <div class="w-full md:w-48 h-48 glass-card rounded-2xl p-1 mx-auto md:mx-0" style="background-color: #262626;">
+<img src="https://i.ibb.co/CKNSqNfT/photo34.png" alt="Profile" class="w-full h-full rounded-xl object-cover" style="object-fit: contain;">
+</div>
+            <!-- Info Block -->
+            <div class="glass-card p-4 md:p-8 flex-1 rounded-2xl min-h-64 flex flex-col justify-between">
+<div>
                     <h1 class="text-3xl font-bold mb-4">Рухлядко Максим</h1>
                     <p class="opacity-80">Junior-разработчик на Python. Нахожусь в активном поиске работы. 14 лет, обучаюсь в общеобразовательной школе, дополнительно прохожу курсы повышения квалификации в сфере информационной безопасности. Имею небольшой (~1 год) опыт в разработке несложных проектов в одиночку.</p>
                 </div>
@@ -62,10 +63,10 @@ a:hover {
             </div>
 <!-- Bottom Blocks -->
         </div>
-        <div class="flex gap-8">
+        <div class="flex flex-col md:flex-row gap-8">
             <!-- LEFT BLOCK - COLLAPSED INITIALLY -->
-            <div id="leftBlock" class="glass-card p-4 flex-1 transition-all duration-500 ease-in-out cursor-pointer overflow-hidden h-16">
-                <div class="flex justify-between items-center">
+            <div id="leftBlock" class="glass-card p-4 flex-1 transition-all duration-500 ease-in-out cursor-pointer overflow-hidden h-16 min-w-full md:min-w-0">
+<div class="flex justify-between items-center">
                     <h2 class="text-xl font-semibold">Квалификация</h2>
                     <i class="chevron" data-feather="chevron-down"></i>
                 </div>
@@ -80,8 +81,8 @@ a:hover {
                 </div>
             </div>
             <!-- RIGHT BLOCK - COLLAPSED INITIALLY -->
-            <div id="rightBlock" class="glass-card p-4 flex-1 transition-all duration-500 ease-in-out cursor-pointer overflow-hidden h-16">
-                <div class="flex justify-between items-center">
+            <div id="rightBlock" class="glass-card p-4 flex-1 transition-all duration-500 ease-in-out cursor-pointer overflow-hidden h-16 min-w-full md:min-w-0">
+<div class="flex justify-between items-center">
                     <h2 class="text-xl font-semibold">Навыки и опыт</h2>
                     <i class="chevron" data-feather="chevron-down"></i>
                 </div>
@@ -91,8 +92,8 @@ a:hover {
             </div>
 </div>
         <!-- New Wide Block -->
-        <div id="wideBlock" class="glass-card p-4 w-full transition-all duration-500 ease-in-out cursor-pointer overflow-hidden h-16">
-            <div class="flex justify-between items-center">
+        <div id="wideBlock" class="glass-card p-4 w-full transition-all duration-500 ease-in-out cursor-pointer overflow-hidden h-16 min-w-full">
+<div class="flex justify-between items-center">
                 <h2 class="text-xl font-semibold">Контактная информация</h2>
                 <i class="chevron" data-feather="chevron-down"></i>
             </div>
@@ -117,10 +118,9 @@ a:hover {
                 </div>
             </div>
         </div>
-
         <!-- Projects Section -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <!-- Project 1 -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-8">
+<!-- Project 1 -->
             <div class="glass-card p-6 rounded-2xl">
                 <p class="text-xs text-gray-400 mb-1">Closed-Source</p>
                 <h3 class="text-xl font-semibold mb-2">ATGS</h3>
@@ -171,10 +171,9 @@ a:hover {
                 </a>
             </div>
         </div>
-
         <!-- Additional Project -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <div class="glass-card p-6 rounded-2xl">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-8">
+<div class="glass-card p-6 rounded-2xl">
                 <p class="text-xs text-gray-400 mb-1">Sold</p>
                 <h3 class="text-xl font-semibold mb-2">Flame Logger</h3>
                 <p class="text-sm text-gray-400 mb-4">2025</p>
