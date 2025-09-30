@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <script>
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        var viewport = document.querySelector('meta[name="viewport"]');
+        if (viewport) {
+            viewport.setAttribute('content', 'width=1200, user-scalable=yes');
+        } else {
+            var meta = document.createElement('meta');
+            meta.name = 'viewport';
+            meta.content = 'width=1200, user-scalable=yes';
+            document.getElementsByTagName('head')[0].appendChild(meta);
+        }
+        
+        if (!window.location.search.includes('desktop=1')) {
+            window.location.href = window.location.href + (window.location.search ? '&' : '?') + 'desktop=1';
+        }
+    }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Рухлядко Максим - резюме.</title>
+    <title>Резюме</title>
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
@@ -41,7 +58,7 @@ a:hover {
         <div class="flex items-start gap-8">
             <!-- Photo Block -->
             <div class="w-48 h-64 glass-card rounded-2xl p-1">
-                <img src="https://e.radikal.host/2025/10/01/photo34.png" alt="Profile" class="w-full h-full rounded-xl object-cover">
+                <img src="https://i.ibb.co/CKNSqNfT/photo34.png" alt="Profile" class="w-full h-full rounded-xl object-cover">
             </div>
 <!-- Info Block -->
             <div class="glass-card p-8 flex-1 rounded-2xl h-64 flex flex-col justify-between">
